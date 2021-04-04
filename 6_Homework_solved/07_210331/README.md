@@ -90,11 +90,11 @@ def quick_sort(x):
     return quick_sort(left) + [pivot] + quick_sort(right)
 ```
 
-#### 4. 공간복잡도 O(N) 일 경우 풀이
+#### 4. 공간복잡도 O(N) 일 경우
 
-3번에서는 pivot 으로 지정한 index값만 제외 후에 left, right 를 분리했는데
-4번에서는 pivot 과 같은 값을 가지는 경우를 모두 equal로 제외한다.
-중복값이 많을 경우, 다음번에 비교해야할 값이 더 적어진다는 장점이 있을 것 같다.
+3번에서는 pivot 으로 지정한 index값만 제외 후에 left, right 를 분리했는데  
+4번에서는 pivot 과 같은 값을 가지는 경우를 모두 equal로 제외한다.  
+중복값이 많을 경우, 다음번에 비교해야할 값이 더 적어진다는 장점이 있을 것 같다.  
 
 ```python
 def quick_sort(x):
