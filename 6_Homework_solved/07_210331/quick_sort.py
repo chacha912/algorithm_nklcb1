@@ -1,11 +1,11 @@
-def quicksort(x):
+def quick_sort(x):
 
     def sort(start, end):
         if start >= end:
             return
 
-        pivot = x[(start+end)//2]
-        
+        pivot = x[start]
+
         low, high = start, end
         while low <= high:
             while x[low] < pivot:
@@ -16,7 +16,7 @@ def quicksort(x):
                 x[low], x[high] = x[high], x[low]
                 low += 1
                 high -= 1
-        
+
         mid = low
 
         sort(start, mid-1)
@@ -25,5 +25,4 @@ def quicksort(x):
     sort(0, len(x)-1)
     return x
 
-arr = [15,6,10,22,33,45]
-print(quicksort(arr))
+print(quick_sort([2,312,412,123,12,21,12,2,1,2]))
