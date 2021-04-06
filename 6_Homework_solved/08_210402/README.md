@@ -1,5 +1,3 @@
-# Homework #8
-
 ### 이분 탐색 문제 해결
 
 - [프로그래머스 징검다리 문제](https://programmers.co.kr/learn/courses/30/lessons/43236)

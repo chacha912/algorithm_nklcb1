@@ -23,7 +23,8 @@ def solution(distance, rocks, n):
                 prev = rock
         
         if rm_rock_cnt <= n:
-            answer = max([answer, mid])
+            answer = mid # 더 범위를 좁히기 때문에 덮어쓰지는 않으므로 그냥 해도 됨
+            # answer = max([answer, mid])
             left = mid + 1
         else:
             right = mid - 1
